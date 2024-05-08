@@ -2,7 +2,9 @@ SNANDer
 ===
 
 SNANDer - Serial Nor/nAND/Eeprom programmeR (based on CH347)
+
 **copyright**
+
 This software is modified from the original project: [Droid-MAX/SNANDer](https://github.com/Droid-MAX/SNANDer)
 
 ![ch341a-nextProgrammer](photos/ch347-nextProgrammer.jpg)
