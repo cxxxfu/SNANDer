@@ -1445,7 +1445,7 @@ static const struct SPI_NAND_FLASH_INFO_T spi_nand_flash_tables[] = {
 		feature:				SPI_NAND_FLASH_PLANE_SELECT_HAVE,
 	},
 	{
-		mfr_id: 				_SPI_NAND_MANUFACTURER_ID_DS,
+		mfr_id: 				_SPI_NAND_MANUFACTURER_ID_FORESEE,
 		dev_id: 				_SPI_NAND_DEVICE_ID_DS35Q1GA,
 		ptr_name:				"DS DS35Q1GA",
 		device_size:				_SPI_NAND_CHIP_SIZE_1GBIT,
