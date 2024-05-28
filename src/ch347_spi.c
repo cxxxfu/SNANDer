@@ -54,6 +54,7 @@
 
 #define MODE_1_IFACE 2
 #define MODE_2_IFACE 1
+#define MODE_0_IFACE 0
 
 
 #define	 CH341_PACKET_LENGTH		0x20
@@ -577,7 +578,7 @@ int ch347_spi_shutdown(void)
 #elif defined(__linux__)
 	struct ch347_spi_data *ch347_data = data;
     /* TODO: Set this depending on the mode */
-	int spi_interface = MODE_2_IFACE;
+	int spi_interface = MODE_0_IFACE;
 	libusb_release_interface(handle, spi_interface);
 	libusb_attach_kernel_driver(handle, spi_interface);
 	libusb_close(handle);
@@ -653,7 +654,7 @@ int ch347_spi_init(void)
 
 	/* TODO: set based on mode */
 	/* Mode 1 uses interface 2 for the SPI interface */
-	int spi_interface = MODE_2_IFACE;
+	int spi_interface = MODE_0_IFACE;
 
 	ret = libusb_detach_kernel_driver(ch347_data->handle, spi_interface);
 	if (ret != 0 && ret != LIBUSB_ERROR_NOT_FOUND)
